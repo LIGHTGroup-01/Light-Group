@@ -2,35 +2,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LIGHT Group SARL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       background-color: #fff;
       color: #000;
+      line-height: 1.6;
     }
     header {
       background-color: #000;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-    }
-    header h1 {
       color: gold;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
     nav a {
-      margin: 0 1rem;
       color: gold;
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(to right, #000, gold);
+      color: #fff;
+      padding: 4rem 2rem;
+      border-radius: 0 0 30px 30px;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
     }
     footer {
-      background: #222;
+      background-color: #111;
       color: #ccc;
       text-align: center;
-      padding: 1rem;
+      padding: 2rem 1rem;
       font-size: 0.9rem;
     }
   </style>
@@ -41,18 +57,23 @@
   <h1>LIGHT Group SARL</h1>
   <nav>
     <a href="index.html">Accueil</a>
-    <a href="services.html">Nos Services</a>
+    <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
+<section class="hero">
+  <h2>Votre lumière, nos services</h2>
+  <p>Découvrez notre groupe et ses 12 départements, tous au service de vos besoins.</p>
+</section>
+
 <section>
-  <h2>Bienvenue sur le site de LIGHT Group SARL</h2>
-  <p>Nous proposons une gamme de services pour accompagner nos clients dans divers domaines. Découvrez nos services ci-dessous.</p>
+  <h2>Qui sommes-nous ?</h2>
+  <p>LIGHT Group SARL est une entreprise pluridisciplinaire basée à Lomé, Togo. Nous mettons en œuvre notre expertise pour vous fournir des services fiables, innovants et accessibles.</p>
 </section>
 
 <footer>
-  &copy; 2025 LIGHT Group SARL - Tous droits réservés.
+  &copy; 2025 LIGHT Group SARL. Tous droits réservés. | Contact : +228 92 47 00 75
 </footer>
 
 </body>
