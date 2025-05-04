@@ -1,107 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LIGHT Group SARL</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <script>
-    function switchLanguage(lang) {
-      document.querySelectorAll('[data-fr]').forEach(el => {
-        el.innerText = lang === 'fr' ? el.getAttribute('data-fr') : el.getAttribute('data-en');
-      });
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #000;
     }
-  </script>
+    header {
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    header h1 {
+      color: gold;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: gold;
+      text-decoration: none;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800">
-  <header class="bg-black text-white p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">LIGHT Group SARL</h1>
-      <div class="space-x-4">
-        <button onclick="switchLanguage('fr')">FR</button>
-        <button onclick="switchLanguage('en')">EN</button>
-      </div>
-    </div>
-  </header>
+<body>
 
-  <section class="bg-yellow-50 py-20 text-center">
-    <h2 class="text-4xl font-bold mb-4" data-fr="Votre lumière, nos services" data-en="Your Light, Our Services">Votre lumière, nos services</h2>
-    <p class="text-lg" data-fr="LIGHT Group SARL est un groupe multi-services innovant, fiable et orienté vers l’excellence." data-en="LIGHT Group SARL is an innovative, reliable, and excellence-driven multi-service group.">LIGHT Group SARL est un groupe multi-services innovant, fiable et orienté vers l’excellence.</p>
-  </section>
+<header>
+  <h1>LIGHT Group SARL</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Nos Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section id="services" class="py-16 container mx-auto">
-    <h3 class="text-3xl font-semibold text-center mb-12" data-fr="Nos Départements" data-en="Our Departments">Nos Départements</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Admin Solutions</h4>
-        <p data-fr="Accompagnement pour démarches administratives (nationalité, passeport, casier, etc.)." data-en="Support for administrative procedures (nationality, passport, criminal record, etc.).">Accompagnement pour démarches administratives (nationalité, passeport, casier, etc.).</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Realty</h4>
-        <p data-fr="Vente, location, gestion de biens immobiliers." data-en="Sale, rental, and management of real estate.">Vente, location, gestion de biens immobiliers.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Color</h4>
-        <p data-fr="Peinture et décoration intérieure et extérieure." data-en="Interior and exterior painting and decoration.">Peinture et décoration intérieure et extérieure.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Cleaner</h4>
-        <p data-fr="Lavage de véhicules à domicile ou en station." data-en="Vehicle washing at home or in-station.">Lavage de véhicules à domicile ou en station.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Logistic</h4>
-        <p data-fr="Transport, distribution et gestion de stock." data-en="Transport, distribution, and stock management.">Transport, distribution et gestion de stock.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Health Services</h4>
-        <p data-fr="Soins et assistance médicale à domicile." data-en="Home care and medical assistance.">Soins et assistance médicale à domicile.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Financial Services</h4>
-        <p data-fr="Crédits, assurances et conseils financiers." data-en="Loans, insurance, and financial advice.">Crédits, assurances et conseils financiers.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Catering</h4>
-        <p data-fr="Service traiteur pour événements et repas à emporter." data-en="Catering services for events and takeaway meals.">Service traiteur pour événements et repas à emporter.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Pressing</h4>
-        <p data-fr="Pressing et blanchisserie professionnels." data-en="Professional dry cleaning and laundry.">Pressing et blanchisserie professionnels.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Creative Studio</h4>
-        <p data-fr="Design graphique, vidéo et production de contenus." data-en="Graphic design, video, and content production.">Design graphique, vidéo et production de contenus.</p>
-      </div>
-      <div class="bg-white shadow-md p-6 rounded-xl">
-        <h4 class="font-bold text-xl mb-2">Light Tech Solutions</h4>
-        <p data-fr="Maintenance informatique et solutions énergétiques." data-en="IT maintenance and energy solutions.">Maintenance informatique et solutions énergétiques.</p>
-      </div>
-    </div>
-  </section>
+<section>
+  <h2>Bienvenue sur le site de LIGHT Group SARL</h2>
+  <p>Nous proposons une gamme de services pour accompagner nos clients dans divers domaines. Découvrez nos services ci-dessous.</p>
+</section>
 
-  <section id="apropos" class="py-16 bg-gray-100">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-semibold mb-4" data-fr="À propos de nous" data-en="About Us">À propos de nous</h3>
-      <p data-fr="LIGHT Group SARL regroupe plusieurs départements offrant des services fiables, accessibles et modernes, au Togo et bientôt au-delà." data-en="LIGHT Group SARL brings together several departments offering reliable, accessible, and modern services in Togo and beyond.">LIGHT Group SARL regroupe plusieurs départements offrant des services fiables, accessibles et modernes, au Togo et bientôt au-delà.</p>
-    </div>
-  </section>
+<footer>
+  &copy; 2025 LIGHT Group SARL - Tous droits réservés.
+</footer>
 
-  <section id="contact" class="py-16">
-    <div class="container mx-auto text-center">
-      <h3 class="text-3xl font-semibold mb-4" data-fr="Contactez-nous" data-en="Contact Us">Contactez-nous</h3>
-      <p data-fr="Appelez-nous au" data-en="Call us at">Appelez-nous au</p> <strong>+228 92 47 00 75</strong>
-      <p>Email : <strong>lightgroupsarl@gmail.com</strong></p>
-      <form class="mt-8 max-w-xl mx-auto text-left">
-        <input type="text" placeholder="Nom complet / Full name" class="w-full p-3 border border-gray-300 rounded mb-4" required />
-        <input type="email" placeholder="Email" class="w-full p-3 border border-gray-300 rounded mb-4" required />
-        <textarea placeholder="Message" class="w-full p-3 border border-gray-300 rounded mb-4" rows="4" required></textarea>
-        <button type="submit" class="bg-black text-white px-6 py-3 rounded hover:bg-yellow-500 transition" data-fr="Envoyer" data-en="Send">Envoyer</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="bg-black text-white text-center py-6">
-    <p>&copy; 2025 LIGHT Group SARL - Tous droits réservés.</p>
-  </footer>
 </body>
 </html>
